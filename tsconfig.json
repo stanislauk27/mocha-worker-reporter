@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "outDir": "_dist",
+    "baseUrl": "src",
+    "incremental": true,
+    "tsBuildInfoFile": "./_dist/.tsbuildinfo",
+    "paths": {
+      "*": [
+        "*"
+      ]
+    },
+    "types": [
+      "node",
+      "@types/mocha"
+    ],
+    "inlineSourceMap": true,
+    "target": "ES2019",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "allowSyntheticDefaultImports": true,
+    "rootDir": "src",
+    "lib": [
+      "dom",
+      "ES2023",
+      "ESNext.Disposable"
+    ],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.cts"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}

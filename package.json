@@ -1,0 +1,29 @@
+{
+  "name": "mocha-worker-reporter",
+  "version": "1.0.0",
+  "description": "Multiple reporters on worker level for mocha",
+  "main": "_dist/index.cjs",
+  "type": "module",
+  "keywords": [
+    "Mocha",
+    "Reporter"
+  ],
+  "scripts": {
+    "build": "npx tspc"
+  },
+  "files": [
+    "_dist"
+  ],
+  "author": "Stanislau Kavalski",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mocha": "^9.1.1",
+    "@types/node": "^22.10.1",
+    "ts-patch": "3.0.2",
+    "tsx": "^4.19.2",
+    "typescript": "5.3.3"
+  },
+  "dependencies": {
+    "mocha": ">= 8.3.1"
+  }
+}
