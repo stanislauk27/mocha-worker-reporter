@@ -70,7 +70,7 @@ class BaseMochaWorkerReporter extends parallelBufferedReporter {
         runner.on(EVENT_TEST_PENDING, test => handleError(() => reporter.onTestPending(test)));
         runner.on(EVENT_TEST_END, test => handleError(() => reporter.onTestEnd(test)));
         runner.on(EVENT_HOOK_BEGIN, hook => handleError(() => reporter.onHookBegin(hook)));
-        runner.on(EVENT_HOOK_END, () => handleError(() => reporter.onHookEnd()));
+        runner.on(EVENT_HOOK_END, hook => handleError(() => reporter.onHookEnd(hook)));
     }
 
     // Wait until worker reporters finish their job or timeout
