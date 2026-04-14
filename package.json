@@ -1,6 +1,6 @@
 {
   "name": "mocha-worker-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Multiple reporters on worker level for mocha",
   "main": "_dist/index.cjs",
   "type": "module",
